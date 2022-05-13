@@ -1,0 +1,452 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* b2560d */
+/* b56727 */
+body {
+  font-family: "Roboto slab", sans-serif;
+  background: #b2560d;
+  color: #fff;
+  line-height: 1.6;
+  font-weight: 10;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 90;
+  font-size: 4rem;
+}
+h2, h3 {
+  font-weight: 90;
+  text-transform: uppercase;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.headlight {
+  text-align: center;
+  transform: translateY(300px);
+}
+
+#logo {
+  width: 245px;
+  height: 60px;
+  padding-left: 3rem;
+}
+
+.btn1 {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  border: 0.5px solid #fff;
+  border-radius: 5%;
+  transition: border-color 0.5s;
+  margin-top: 3rem;
+}
+
+.btn1:hover {
+  color: #fcae1e;
+}
+
+
+/* HEADER */
+.header-home {
+  background: url("/img/Food/Little\ Aosta-\ credit\ Sam\ Stewart\ \(3\).jpg")
+    no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+.header-home .content ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+  padding-top: 15rem;
+}
+
+.header-home .content ul li {
+  text-transform: uppercase;
+  border-bottom: 1px #fff solid;
+  font-size: 5rem;
+}
+
+.header-home .content ul li:hover {
+  border-color: #fcae1e;
+}
+.header-home .content h2 {
+  text-align: center;
+  padding-top: 3.5rem;
+  color: #fef6f3;
+}
+
+/* MAKE PICTURE DARKER */
+.header-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.19);
+}
+
+/* BRING TEXT OUT OF THE DARK OVERLAY */
+.header-home * {
+  z-index: 1;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #b2560d;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0px;
+  transition: 0.5s;
+  max-width: 1750px;
+}
+
+/* MAIN NAV */
+#main-nav,
+#main-nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+#main-nav ul li {
+  padding: 1rem;
+}
+#main-nav ul {
+  padding-left: 39rem;
+}
+
+#main-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: 1px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+}
+
+#main-nav ul .link a:hover {
+  border-color: #fcae1e;
+}
+#main-nav ul .ikon a:hover {
+  color: #fcae1e;
+}
+#main-nav ul .ikon {
+  padding-right: 1px;
+}
+#main-nav ul li a.current {
+  border-color: #fcae1e;
+}
+
+/* STORY */
+.header-story {
+  background: url("/img/People/Little\ Aosta_Ben\ Bayly\ credit\ Sam\ Stewart\ \(2\).jpg")
+    no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+.header-story::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.19);
+}
+
+.header-story * {
+  z-index: 1;
+}
+
+#about .text {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+#about .text h2 {
+  padding-bottom: 1rem;
+}
+
+#about img {
+  width: 400px;
+  height: 600px;
+}
+#about .pic {
+  text-align: center;
+}
+#chefs img {
+  height: auto;
+  width: 1000px;
+}
+#chefs .text {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+#chefs .landscapepic {
+  text-align: center;
+}
+
+/* VISIT */
+.header-visit {
+  background: url("/img/Food/la.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.header-visit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.19);
+}
+
+.header-visit * {
+  z-index: 1;
+}
+
+.header-visit .content {
+  text-align: center;
+  transform: translateY(180px);
+}
+
+.header-visit #booking .text-field {
+  display: grid;
+  grid-template-areas:
+    "Name email"
+    "phone number"
+    "date time"
+    "message message";
+  grid-gap: 0.8rem;
+  padding-top: 1.5rem;
+  align-items: center;
+  width: 500px;
+}
+
+.header-visit #booking .text-field .text-input {
+  height: 140%;
+}
+.header-visit #booking .text-field .name-input {
+  grid-area: name;
+}
+.header-visit #booking .text-field .phone-input {
+  grid-area: phone;
+}
+.header-visit #booking .text-field .number-input {
+  grid-area: number;
+}
+.header-visit #booking .text-field .email-input {
+  grid-area: email;
+}
+.header-visit #booking .text-field .date-input {
+  grid-area: date;
+}
+.header-visit #booking .text-field .time-input {
+  grid-area: time;
+}
+.header-visit #booking .text-field .message-input {
+  grid-area: message;
+  height: 60px;
+  width: 100%;
+}
+.header-visit #booking .btn1 {
+  text-align: center;
+  margin-top: 0.9rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-visit #booking {
+  display: block;
+  text-align: center;
+}
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* GALLERY */
+.header-gallery {
+  background: url("/img/Food/Little\ Aosta-\ credit\ Sam\ Stewart\ \(4\).jpg")
+    no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.header-gallery::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.19);
+}
+
+.header-gallery * {
+  z-index: 1;
+}
+
+/* EAT */
+.header-eat {
+  background: url("/img/food/Little\ Aosta-\ credit\ Sam\ Stewart\ \(6\).jpg")
+    no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+.header-eat::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.19);
+}
+
+.header-eat * {
+  z-index: 1;
+}
+
+.menu {
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.75rem;
+
+}
+
+#foodmenu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  text-align: center;
+  align-items: center;
+  border-bottom: 0.5px dotted #fff;
+  padding-bottom: 2rem;
+}
+
+/* DRINK */
+.header-drink {
+  background: url("/img/Drink/Little\ Aosta\ -\ Aperol\ Spritz\ &\ \ Negroni\ Spagliato\ credit\ Sam\ Stewart.jpg")
+    no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+.header-drik::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.19);
+}
+
+.header-drink * {
+  z-index: 1;
+}
+
+#bevmenu {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  /* grid-gap: 1rem; */
+  text-align: center;
+  align-items: center;
+  border-bottom: 0.5px dotted #fff;
+  padding-bottom: 2rem;
+}
+#vinomenu {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  /* grid-gap: 1rem; */
+  text-align: center;
+  align-items: center;
+  border-bottom: 0.5px dotted #fff;
+  padding-bottom: 2rem;
+}
+
+#vinomenu .menuitems, 
+#bevmenu .menuitems {
+  padding-bottom: 1rem;
+}
+
+#vinomenu h3 {
+  font-size: 1.3rem;
+}
+
+
+
+/* FOOTER */
+#main-footer {
+  height: 11rem;
+  font-size: 1.1rem;
+  border-top: 0.5px dotted #fff;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.footer-content #logoLA {
+  width: 80px;
+  height: 80px;
+}
+
+.footer-content ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.footer-content ul li {
+  padding-right: 1.2rem;
+  padding-top: 0.8rem;
+}
+
+.footer-content ul li a:hover {
+  color: #fcae1e;
+}
+
+.footer-content .btn {
+  border-bottom: 1px #fcae1e solid;
+}
+.footer-content .btn:hover {
+  color: #fcae1e;
+}

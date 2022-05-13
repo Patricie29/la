@@ -1,0 +1,78 @@
+/* TABLETS */
+
+@media (max-width: 1200px) {
+
+   /* home */
+  #main-nav ul {
+    padding-left: 3rem;
+  }
+
+  .header-home .content ul {
+    padding-top: 30rem;
+  }
+  /* story */
+
+  .headlight {
+    text-align: center;
+    transform: translateY(550px);
+  }
+
+  #about img {
+    width: 200px;
+    height: 300px;
+  }
+
+  #chefs img {
+    height: auto;
+    width: 600px;
+  }
+
+  /* VISIT */
+  .header-visit .content {
+    text-align: center;
+    transform: translateY(350px);
+  }
+
+}
+
+/* PHONES */
+
+@media (max-width: 1000px) {
+  .header-home .content ul {
+    display: block;
+    padding-top: 15rem;
+  }
+  .header-home .content ul li {
+    font-size: 5rem;
+    align-items: center;
+  }
+  #logo {
+    display: none;
+  }
+  #main-nav ul {
+    padding-left: 1rem;
+    align-items: center;
+  }
+  #main-nav ul .ikon {
+    display: none;
+  }
+
+  .container {
+    max-width: 800px;
+  }
+
+  /* FOOTER */
+  .footer-content {
+    display: BLOCK;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  #main-footer {
+    height: 12rem;
+  }
+  .footer-content #logoLA {
+    display: none;
+  }
+  
+}
